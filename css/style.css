@@ -45,12 +45,12 @@ body{
     border-radius: 0 0 30px 30px;
 }
 
-.tasks:last-child .col1{
+.task:last-child .col1{
     border-radius: 0 0 0 30px;
 }
 
-.tasks:last-child .col3{
-    border-radius: 0 0 30px ;
+.task:last-child .col3{
+    border-radius: 0 0 30px 0;
 }
 
 
@@ -110,6 +110,14 @@ body{
     width: 20%;
     float: left;
     height: 100%;
+}
+
+.col3:hover{
+    background-color: #90caf9;
+    cursor: pointer;
+}
+
+.task-remove{
     background: url(../images/trash.svg);
     background-color: #bbdefb;
     background-size: 30px;
@@ -117,7 +125,6 @@ body{
     background-position: center;
 }
 
-.col3:hover{
-    background-color: #90caf9;
-    cursor: pointer;
+.checked{
+    text-decoration: line-through;
 }
